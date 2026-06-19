@@ -1,5 +1,6 @@
 # Shree Mathi · Portfolio
-Lightweight, responsive single-page portfolio built withHTML, CSS, Bootstrap 5 and Javascript which displays profile, contacts, tech stack, projects, internships and achievements.
+
+Lightweight, responsive single-page portfolio built with HTML, CSS, Bootstrap 5, Javascript which displays profile, contacts, tech stack, projects, internships and achievements. Designed for easy customization and static hosting.
 
 ## Features
 - Responsive layout (desktop / mobile)
@@ -13,8 +14,7 @@ Lightweight, responsive single-page portfolio built withHTML, CSS, Bootstrap 5 a
 - Bootstrap 5 (layout & utilities)
 - Bootstrap Icons
 - Google Fonts (Inter)
-- Static hosting friendly 
-
+- Static hosting friendly (GitHub Pages, Netlify, Vercel)
 
 ## Customization
 - Edit content in `index.html` (name, bio, projects, contacts).
