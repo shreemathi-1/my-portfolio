@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title >Shree Mathi · Portfolio</title>
+  <!-- Bootstrap 5 + Icons + Google Font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #dee2e6;
+      color: #dee2e6;
+      padding: 2rem 0 4rem 0;
+    }
+    .card, .list-group-item {
+      background: #0d1b2a;
+      border: none;
+      box-shadow: 0 8px 20px rgba(0, 20, 50, 0.04);
+      border-radius: 20px;
+    }
+    .card-header {
+      background: transparent;
+      border-bottom: 1px solid #eef2f7;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      padding: 1.25rem 1.5rem;
+    }
+    .badge-soft {
+      background-color: #eef5ff;
+      color: #0d1b2a;
+      font-weight: 500;
+      padding: 0.4rem 0.9rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+    }
+    .tech-tag {
+      background: #dee2e6;
+      color: #0d1b2a;
+      padding: 0.25rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: inline-block;
+      margin: 0.15rem 0.2rem;
+    }
+    .tech-tag-pr {
+      background: #0d1b2a;
+      color:#dee2e6  ;
+      padding: 0.25rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: inline-block;
+      margin: 0.15rem 0.2rem;
+    }
+    .section-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: -0.01em;
+      color: #dee2e6;
+      margin-bottom: 1rem;
+    }
+     .profile-img-placeholder {
+      width: 170px;
+      height: 200px;
+      background: #e6edf8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #dee2e6;
+      font-size: 0.9rem;
+      border: 2px solid white;
+      box-shadow: 0 6px 14px rgba(0, 20, 40, 0.06);
+      margin-right: 15px ;
+      overflow: hidden; 
+    }
+
+    #photo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      border-radius: inherit;
+    }
+
+    .contact-link {
+      color: #dee2e6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.1s;
+    }
+    .contact-link:hover {
+      color: #87b6e5;
+      text-decoration: underline;
+    }
+    .list-group-item {
+      background: transparent;
+      padding: 0.6rem 0.2rem;
+      border-bottom: 1px solid #edf2f9;
+    }
+    .list-group-item:last-child {
+      border-bottom: none;
+    }
+    .list-group-item i {
+      width: 1.6rem;
+      color: #dee2e6;
+    }
+    hr {
+      opacity: 0.4;
+      margin: 1.5rem 0;
+    }
+    .badge-achievement {
+      background: #dee2e6;
+      color:#0d1b2a ;
+      font-weight: 500;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+    }
+    .project-card {
+      background:#dee2e6;
+      border-radius: 18px;
+      padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+      border: 1px solid #dee2e6;
+    }
+    .project-card h6 {
+      font-weight: 600;
+    }
+    .footer-note {
+      color: #0d1b2a;
+      font-size: 0.9rem;
+      border-top: 1px solid #dee2e6;
+      padding-top: 1.8rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ====== HEADER / PROFILE ====== -->
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-8">
+        <div class="card p-3 p-md-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-3 text-center text-md-start">
+             
+              <div class="profile-img-placeholder">
+                 <img  id ="photo" src="/images/photo.jpg">
+              </div>
+             
+            </div>
+            <div class="col-md-9">
+              <h1 class="display-6 fw-bold" style="letter-spacing: -0.02em;color: #dee2e6;">Shree Mathi</h1>
+              <p class=" mb-1" style="font-weight: 500;color: #dee2e6;">B.E. CSE (Cyber Security) · 2023–2027</p>
+              <p class="mb-3" style="color: #dee2e6;">Full‑Stack Developer · Security Enthusiast</p>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="badge-soft"><i class="bi bi-mortarboard-fill me-1"></i> GPA 8.69/10</span>
+                <span class="badge-soft"><i class="bi bi-trophy me-1"></i> CTF Winner</span>
+                <span class="badge-soft"><i class="bi bi-code-square me-1"></i> 200+ LeetCode</span>
+              </div>
+              <p class="mb-0" style="font-size: 0.95rem; color: #dee2e6; max-width: 600px;">
+               Cybersecurity undergraduate with strong full-stack development and software engineering skills. Passionate about secure software development, anomaly detection, and building scalable web applications. Experienced in developing end-to-end projects using modern web technologies, with a keen interest in AI-driven security solutions, cloud computing, and system design. Seeking opportunities to apply technical expertise to solve real-world security and software engineering challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== CONTACT CARD ====== -->
+      <div class="col-lg-4">
+        <div class="card p-3 p-md-4 h-100">
+          <h5 class="fw-semibold mb-3" style="color: #dee2e6;"><i class="bi bi-envelope-paper me-2"></i>Official contacts</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:shreemathik005@example.com" class="contact-link">shreemathik005@example.com</a></li>
+            <li class="list-group-item"><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210" class="contact-link">+91 8610482429</a></li>
+            <li class="list-group-item"><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/shree-mathi-k-3456kk" target="_blank" class="contact-link">linkedin.com/in/shreemathi</a></li>
+            <li class="list-group-item"><i class="bi bi-github"></i> <a href="https://github.com/shreemathi-1" target="_blank" class="contact-link">github.com/shreemathi</a></li>
+            <li class="list-group-item"><i class="bi bi-globe2"></i> <span style="color: #dee2e6;">Chennai · Coimbatore</span></li>
+          </ul>
+          <hr />
+          <div>
+            <span class="badge-achievement"><i class="bi bi-award me-1"></i> Unisys Innovation 2026</span>
+            <span class="badge-achievement ms-1"><i class="bi bi-star-fill me-1" style="color: #dee2e6;"></i> NPTEL Elite+ Gold</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== TWO COLUMN: TECH SKILLS + CERTIFICATIONS ====== -->
+    <div class="row g-4 mt-3">
+      <div class="col-md-8">
+        <div class="card p-3 p-md-4">
+          <h5 class="section-title"><i class="bi bi-laptop-code me-2"></i>Tech stack</h5>
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="fw-semibold mb-1" style="font-size: 0.9rem;color: #dee2e6;">Frontend</p>
+              <div ><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span></div>
+              <div><span class="tech-tag">ReactJS</span><span class="tech-tag">React Native</span></div>
+              <p class="fw-semibold mt-3 mb-1" style="font-size: 0.9rem;color: #dee2e6;">Backend</p>
+              <div><span class="tech-tag">NodeJS</span><span class="tech-tag">Springboot</span></div>
+              <p class="fw-semibold mt-3 mb-1" style="font-size: 0.9rem;color: #dee2e6;">Cloud &amp; Tools</p>
+              <div><span class="tech-tag">GCP</span><span class="tech-tag">Git</span><span class="tech-tag">GitHub</span></div>
+            </div>
+            <div class="col-sm-6">
+              <p class="fw-semibold mb-1" style="font-size: 0.9rem;color: #dee2e6;">Languages</p>
+              <div><span class="tech-tag">Java</span><span class="tech-tag">Python</span></div>
+              <p class="fw-semibold mt-3 mb-1" style="font-size: 0.9rem;color: #dee2e6;">Databases</p>
+              <div><span class="tech-tag">PostgreSQL</span><span class="tech-tag">MySQL</span></div>
+              <p class="fw-semibold mt-3 mb-1" style="font-size: 0.9rem;color: #dee2e6;">Security</p>
+              <div><span class="tech-tag">Burp Suite</span><span class="tech-tag">Nmap</span><span class="tech-tag">Wireshark</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 p-md-4 h-100">
+          <h5 class="section-title"><i class="bi bi-patch-check me-2"></i>Certifications</h5>
+          <ul class="list-unstyled" style="font-size: 0.95rem;color: #dee2e6;">
+            <li class="mb-3"><span class="fw-semibold">Artificial Intelligence</span><br /><span  style="font-size: 0.85rem;color: #dee2e6;">Elewayte · June 2026</span></li>
+            <li class="mb-3"><span class="fw-semibold">Complete AI Engineer Bootcamp</span><br /><span style="font-size: 0.85rem;color: #dee2e6;">Udemy · Ongoing</span></li>
+            <li><span class="fw-semibold">Practical Cyber Security</span> <span class="badge-achievement ms-1">Elite+ Gold</span><br /><span style="font-size: 0.85rem;color: #dee2e6;">NPTEL · Oct 2025</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== PROJECTS + ACHIEVEMENTS ====== -->
+    <div class="row g-4 mt-2">
+      <div class="col-lg-7">
+        <div class="card p-3 p-md-4">
+          <h5 class="section-title"><i class="bi bi-folder2-open me-2"></i>Projects</h5>
+          <div class="project-card mb-3 ">
+            <h6>Data Leakage Prevention &amp; Detection <span class="badge-achievement ms-2">2026</span></h6>
+            <p style="font-size: 0.9rem;">Web app + VS‑Code plugin that scans inputs with pattern matching & security rules. Centralized dashboard for incident monitoring.</p>
+            <div><span class="tech-tag-pr" >React</span><span class="tech-tag-pr">Node.js</span><span class="tech-tag-pr">Express</span><span class="tech-tag-pr">MongoDB</span></div>
+          </div>
+          <div class="project-card">
+            <h6>Anomaly Detection for IoT Networks <span class="badge-achievement ms-2">2026</span></h6>
+            <p style="font-size: 0.9rem;">Extracted UNSW‑NB15 network flow; applied Isolation Forest &amp; One‑Class SVM for threat identification in IoT.</p>
+            <div><span class="tech-tag-pr">Python</span><span class="tech-tag-pr">Django</span><span class="tech-tag-pr">Scikit‑learn</span><span class="tech-tag-pr">Pandas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card p-3 p-md-4 h-100">
+          <h5 class="section-title"><i class="bi bi-trophy me-2"></i>Achievements</h5>
+          <ul class="list-unstyled" style="font-size: 0.92rem;color: #dee2e6;">
+            <li class="mb-2"><span class="fw-semibold">🥇 First Prize</span> — Intra‑dept CTF Competition <span >(Oct 2025)</span></li>
+            <li class="mb-2"><span class="fw-semibold">🏅 Unisys Innovation Program</span> — selected for 2nd round <span  >(2026)</span></li>
+            <li class="mb-2"><span class="fw-semibold">🏅 NPTEL Elite+ Gold</span> — Practical Cyber Security <span >(Oct 2025)</span></li>
+            <li class="mb-2"><span class="fw-semibold">🥈 NPTEL Elite+ Silver</span> — Industry 4.0 &amp; IoT <span >(Oct 2025)</span></li>
+            <li class="mb-2"><span class="fw-semibold">🎓 3<sup>rd</sup> Rank Holder</span> — College 2024–2025</li>
+            <li><span class="fw-semibold">🧩 200+</span> LeetCode problems solved</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== INTERNSHIPS + EDUCATION ====== -->
+    <div class="row g-4 mt-2">
+      <div class="col-md-7" >
+        <div class="card p-3 p-md-4" id="internship">
+          <h5 class="section-title"><i class="bi bi-briefcase me-2"></i>Internships</h5>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span class="fw-semibold" style="color: #dee2e6;">TamilNadu Govt. Cyber Crime Wing</span>
+              <span style="font-size: 0.8rem;color: #dee2e6; ">Chennai · 2026</span>
+            </div>
+            <p style="font-size: 0.9rem;color: #dee2e6;">Web developer — built DSR web app with Next.js + Supabase, role‑based UI &amp; OAuth RBAC for daily cybercrime reports across police stations.</p>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between">
+              <span class="fw-semibold" style="color: #dee2e6;" >Hackup Technologies</span>
+              <span style="font-size: 0.8rem;color: #dee2e6;">Web App Security Tester</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #dee2e6;">Identified vulnerabilities, analyzed HTTP traffic, used Burp Suite, Nmap, Wireshark &amp; Linux tools for security assessments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card p-3 p-md-4 h-100">
+          <h5 class="section-title"><i class="bi bi-mortarboard me-2"></i>Education</h5>
+          <div class="mb-3">
+            <p class="fw-semibold mb-0" style="color: #dee2e6;" >B.E. CSE (Cyber Security)</p>
+            <p class="mb-0" style="color: #dee2e6;">Dr. NGP Institute of Technology, Coimbatore</p>
+            <p class style="font-size: 0.85rem;color: #dee2e6;">2023 – Ongoing · GPA 8.69/10</p>
+          </div>
+          <hr style="margin: 0.5rem 0;" />
+          <div style="color: #dee2e6;">
+            <p class="fw-semibold mb-0" style="color: #dee2e6;">HSC (12th)</p>
+            <p style="font-size: 0.85rem;color: #dee2e6;">Lourde Matha Convent Matric. Hr. Sec. School, Tiruppur</p>
+            <p  style="font-size: 0.85rem;color: #dee2e6;">2022–2023 · 82.5%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== FOOTER (production ready) ====== -->
+    <div class="footer-note text-center">
+      <i class="bi bi-dot"></i> Shree Mathi · portfolio <i class="bi bi-dot"></i> 2026 · built with Bootstrap 5
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional, for toggles etc) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- minimal JS: just a placeholder for future interactivity -->
+  <script>
+    (function() {
+      // small console greeting
+      console.log('✨ Shree Mathi portfolio · production ready');
+    })();
+  </script>
+</body>
+</html>
